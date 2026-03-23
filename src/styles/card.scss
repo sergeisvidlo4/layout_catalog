@@ -33,7 +33,7 @@ main {
   border: 1px solid $border-color;
   border-radius: $radius-small;
 
-  padding: 32px $padding-16 $padding-16;
+  padding: $padding-32 $padding-16 $padding-16;
   transition: transform $animation-time;
 
   &:hover {
@@ -41,8 +41,8 @@ main {
   }
 
   &__image {
-    width: 160px;
-    height: 134px;
+    width: $size-160;
+    height: $size-134;
   }
 
   &__title {
@@ -78,7 +78,7 @@ main {
   }
 
   &__reviews {
-    width: 53px;
+    width: $size-53;
 
     font-size: $font-size-smaller;
     line-height: $line-height-smaller;
@@ -93,7 +93,7 @@ main {
 
     width: $card-inner-width;
 
-    margin-top: 24px;
+    margin-top: $margin-24;
   }
 
   &__price-label {
@@ -122,8 +122,8 @@ main {
     color: $white-color;
 
     font-weight: $font-weight-bold;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: $font-size-14;
+    line-height: $line-height-16;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
