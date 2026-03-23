@@ -7,15 +7,15 @@ main {
   gap: $gap-46 $gap-48;
   justify-content: center;
 
-  @media (min-width: 488px) {
+  @media (min-width: $breakpoint-tablet-small) {
     --column-count: 2;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-tablet) {
     --column-count: 3;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-desktop) {
     --column-count: 4;
   }
 }
@@ -30,7 +30,7 @@ main {
   width: $card-width;
 
   background-color: $white-color;
-  border: 1px solid $border-color;
+  border: $border-width-1 solid $border-color;
   border-radius: $radius-small;
 
   padding: $padding-32 $padding-16 $padding-16;
@@ -129,7 +129,7 @@ main {
     text-decoration: none;
 
     box-sizing: border-box;
-    border: 1px solid $blue-color;
+    border: $border-width-1 solid $blue-color;
     transition:
       color $animation-time,
       background-color $animation-time;
@@ -137,7 +137,7 @@ main {
     &:hover {
       background-color: $white-color;
       color: $blue-color;
-      border: 1px solid $blue-color;
+      border: $border-width-1 solid $blue-color;
     }
   }
 }
